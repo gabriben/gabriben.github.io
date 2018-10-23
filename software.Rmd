@@ -3,10 +3,8 @@
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
-## Github packages
+## Data Science Website Projects
 
-- `riskclustr`, a package of functions for the study of etiologic heterogeneity
-- `ezfun`, a package of personal utility functions to generate tables for use in R Markdown reports
-- `condsurv`, a package for conditional survival analysis
-
+- [**citiBike**](https://gabriben.shinyapps.io/work/), a shiny website developped in collaboration with a project group that allows users to look for available citiBikes in New York in real time and to check for other real time and historical information before going for a ride. 
+- [**Happiness text mining**](./index2.html), my first go at text mining for an assignment at Columbia.
 
