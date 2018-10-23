@@ -13,4 +13,4 @@ My Bachelor Thesis under the advisement of Dr. Guido Cozzi at the University of 
 
 ## Swiss Matura
 
-A modest look at Game Theory with a reformulation of the proof of the Nash Equilibrium for my [*Masterarbeit*](./files/TM_BENEDICT_Garbiel.pdf), with the substantial help of my supervisor [Prof. Luc Dessauges] and a lucky encounter with [Prof. Aumann](https://en.wikipedia.org/wiki/Robert_Aumann).
+A modest look at Game Theory with a reformulation of the proof of the Nash Equilibrium for my [*Masterarbeit*](./files/TM_BENEDICT_Garbiel.pdf), with the substantial help of my supervisor Prof. Luc Dessauges and a lucky encounter with [Prof. Aumann](https://en.wikipedia.org/wiki/Robert_Aumann).
