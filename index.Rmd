@@ -6,10 +6,42 @@
 <img src="images/workinTight.png" style="width:25%; margin-right: 20px" align="left">
 
 
-As part of my Mater in Statistics, I am currently doing an exchange at Columbia University, my home university being KU Leuven. In parallel, I am writing my thesis on the digitization and reconstruction of Kaplan Meier survival curves, involving a Hough transform and the sequential reestimation of numbers at risk given the detected deaths and censoring events. 
+As part of my Master in Statistics, I am currently doing an exchange at Columbia University, my home university being KU Leuven. In parallel, I am writing my thesis on the digitization and reconstruction of Kaplan Meier survival curves, involving a Hough transform and the sequential re-estimation of numbers at risk given the detected deaths and censoring events. 
 
-This summer I worked at Cytel, where I was trying to derive a mathematical formulation for the conditinoal probability  involved in adaptive clinical trials with compounded outcomes based on the [Finkelstein-Schoenfled Statistic](https://cdn1.sph.harvard.edu/wp-content/uploads/sites/253/2016/05/joint-rank-sim-1999.pdf).
+This summer I worked at Cytel, where I was trying to derive a mathematical formulation for the conditional probability  involved in adaptive clinical trials with compounded outcomes based on the [Finkelstein-Schoenfled Statistic](https://cdn1.sph.harvard.edu/wp-content/uploads/sites/253/2016/05/joint-rank-sim-1999.pdf).
 
 My CV is available [here](files/Gabriel Benedict.pdf).
 
+<!-- # Writing -->
+
+<!-- ## Robust Association Measures -->
+
+<!-- Group [project](./files/Robust.pdf) at KU Leuven testing different robust association measures between two multivariate variables. -->
+
+<!-- ## Generalized Linear Mixed Models -->
+
+<!-- Group [project](./files/GLM_Project.pdf) at KU Leuven on Poisson regression models and cubic penalized splines. -->
+
+<!-- ## Transgovernmental Networks -->
+
+<!-- Assisting research in a quantitative [study](http://wp.peio.me/wp-content/uploads/2016/12/PEIO10_paper_46.pdf) of democratic legitimacy of transgovernmental networks -->
+
+<!-- ## Debt Relief Efficiency -->
+
+<!-- My Bachelor Thesis under the advisement of Dr. Guido Cozzi at the University of St Gallen focuses on the efficiency of IMF and WB debt relief. The first part consisted of estimating the effect of relief on GDP growth measured by a counterfactual estimator, using a control group of similar but non-relieved countries. Then an analysis of Time Series data on the millenium development goals was made, so as to measure the effect of relief on the stated goals of the relief initiatives, again for both control and treatment groups. The paper was published at the university library but is only available to current students and alumni. I made it available [here](./files/Debt_Relief_Efficiency.pdf) though. -->
+
+<!-- ## Aumann and Nash -->
+
+<!-- High-school Thesis on Game Theory with a reformulation of the proof of the Nash Equilibrium for my [*Masterarbeit*](./files/TM_BENEDICT_Garbiel.pdf), with the substantial help of my supervisor Prof. Luc Dessauges and a lucky encounter with [Prof. Aumann](https://en.wikipedia.org/wiki/Robert_Aumann). -->
+
+<!-- # Programming -->
+
+<!-- ## Data Science Website Projects -->
+
+<!-- - [**citiBike**](https://gabriben.shinyapps.io/work/), a shiny website developped in collaboration with a project group that allows users to look for available citiBikes in New York in real time and to check for other real time and historical information before going for a ride.  -->
+<!-- - [**Happiness text mining**](./index2.html), my first go at text mining for an assignment at Columbia. -->
+
+<!-- ## EmacsforStatistics -->
+
+<!-- .emacs [file](https://github.com/gabriben/EmacsforStatistics) replicating some Rstudio behavior and including other features. -->
 
