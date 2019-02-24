@@ -7,6 +7,8 @@
 
 - [**citiBike**](https://gabriben.shinyapps.io/work/), a shiny website developped in collaboration with a project group that allows users to look for available citiBikes in New York in real time and to check for other real time and historical information before going for a ride. 
 - [**Happiness text mining**](./index2.html), my first go at text mining for an assignment at Columbia.
+- [**Natural Language Processing**](./NLP.html), my first go at Natural Language Processing for an assignment at Columbia.
+- [**Spatial Statistics**](./SpatialStats.html), my first go at Spatial Statistics for an assignment at Columbia.
 
 ## EmacsforStatistics
 
