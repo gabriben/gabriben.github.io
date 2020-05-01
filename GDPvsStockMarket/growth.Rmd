@@ -1,0 +1,55 @@
+---
+title: "GDP VS Stock Market"
+author: "Gabriel"
+date: "5/1/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(wbstats)
+library(data.table)
+library(ggplot2)
+library(magrittr)
+
+```
+
+## GDP VS Stock market Growth
+
+
+```{r, echo=FALSE}
+gdp = setDT(wb("NY.GDP.MKTP.KD.ZG", country = "US"))[, .(date, indicator, value)]
+
+stock = setDT(wb("GFDD.OM.02", country = "US"))[, .(date, indicator, value)]
+
+d = rbind(stock, gdp)
+d = d[order(date)]
+
+ggplot(d, aes(date, value, group = indicator)) + geom_line(aes(color = indicator)) +
+  scale_color_manual(values = c("#00AFBB", "#E7B800")) +
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 90)) +
+  theme(legend.position="bottom")
+
+#cor(stock$value, gdp$value[-1])
+
+```
+
+## GDP VS Stock market Cumulative Growth
+
+```{r, echo=FALSE}
+
+d[, hundred := 100]
+
+d[, index := cumprod(1 + value / 100), by = indicator]
+d[, index := index * 100]
+
+ggplot(d, aes(date, index, group = indicator)) + geom_line(aes(color = indicator)) +
+  scale_color_manual(values = c("#00AFBB", "#E7B800")) +
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 90)) +
+  theme(legend.position="bottom")
+
+```
+
