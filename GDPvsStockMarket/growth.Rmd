@@ -12,6 +12,7 @@ library(wbstats)
 library(data.table)
 library(ggplot2)
 library(magrittr)
+library(plotly)
 
 ```
 
@@ -23,33 +24,127 @@ gdp = setDT(wb("NY.GDP.MKTP.KD.ZG", country = "US"))[, .(date, indicator, value)
 
 stock = setDT(wb("GFDD.OM.02", country = "US"))[, .(date, indicator, value)]
 
-d = rbind(stock, gdp)
-d = d[order(date)]
+allD = setDT(wb(indicator = c("GFDD.OM.02", "NY.GDP.MKTP.KD.ZG")))[, .(date, indicator, value, country)]
 
-ggplot(d, aes(date, value, group = indicator)) + geom_line(aes(color = indicator)) +
+saveRDS(allD, "countries.RDS")
+
+# d = rbind(stock, gdp)
+# d = d[order(date)]
+
+p <- ggplot(allD[country %in% c("Argentina", "France")], aes(date, value, group = indicator)) + geom_line(aes(color = indicator, shape = country)) +
   scale_color_manual(values = c("#00AFBB", "#E7B800")) +
   theme_minimal() + 
   theme(axis.text.x = element_text(angle = 90)) +
   theme(legend.position="bottom")
+
+sort(unique(allD$country))
+
+ggplot(allD[country %in% c("Germany", "France", "Switzerland", "United States", "Italy")], aes(as.numeric(date), as.numeric(value))) + 
+  geom_line(aes(linetype = indicator, colour = country)) +
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 90)) +
+  theme(legend.position="bottom")
+
+aes(colour = indicator, shape = country)
+aes(color = indicator, shape = country)
+, group = indicator
+
+p <- ggplotly(p) %>% layout(
+    title = "Drop down menus - Plot type",
+    xaxis = list(domain = c(0.1, 1)),
+    yaxis = list(title = "y"),
+    updatemenus = list(
+      list(
+        y = 0.8,
+        buttons = list(
+
+          list(method = "restyle",
+               args = list("type", "scatter"),
+               label = "Argentina"),
+
+          list(method = "restyle",
+               args = list("type", "histogram2d"),
+               label = "France")))
+    ))
+
+
+
+
+colnames(df) <- c("x", "y")
+fig <- plot_ly(df, x = ~x, y = ~y, alpha = 0.3)
+fig <- fig %>% add_markers(marker = list(line = list(color = "black", width = 1)))
+fig <- fig %>% layout(
+    title = "Drop down menus - Plot type",
+    xaxis = list(domain = c(0.1, 1)),
+    yaxis = list(title = "y"),
+    updatemenus = list(
+      list(
+        y = 0.8,
+        buttons = list(
+
+          list(method = "restyle",
+               args = list("type", "scatter"),
+               label = "Scatter"),
+
+          list(method = "restyle",
+               args = list("type", "histogram2d"),
+               label = "2D Histogram")))
+    ))
+
+fig
 
 #cor(stock$value, gdp$value[-1])
 
 ```
 
+```{r}
+
+p <- plot_ly() %>%
+  add_trace(type = 'line',
+             y = data, visible=T, marker = list(color = 'blue'))  %>%
+  add_trace(type = 'scatter', mode = 'markers',
+            y = data2, visible=F, marker = list(color = 'red')) %>%
+  layout(
+    updatemenus = list(
+      list(
+        yanchor = 'auto',
+        buttons = list(
+          list(method = "restyle",
+               args = list("visible", list(T, F)),
+               label = 'data'),
+          
+          list(method = "restyle",
+               args = list("visible", list(F,T)),
+               label = 'data2')
+        ))))
+
+```
+
+
 ## GDP VS Stock market Cumulative Growth
 
 ```{r, echo=FALSE}
 
-d[, hundred := 100]
+allD[order(date), index := cumprod(1 + value / 100), by = .(country, indicator)]
+allD[order(date), index := index * 100]
 
-d[, index := cumprod(1 + value / 100), by = indicator]
-d[, index := index * 100]
-
-ggplot(d, aes(date, index, group = indicator)) + geom_line(aes(color = indicator)) +
+ggplot(allD, aes(date, index, group = indicator)) + geom_line(aes(color = indicator)) +
   scale_color_manual(values = c("#00AFBB", "#E7B800")) +
   theme_minimal() + 
   theme(axis.text.x = element_text(angle = 90)) +
   theme(legend.position="bottom")
+
+
+p <- ggplot(allD[country %in% c("China", "United States")], aes(as.numeric(date), as.numeric(index))) + 
+  geom_line(aes(linetype = indicator, colour = country)) +
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 90)) +
+  theme(legend.position="bottom")
+
+p <- ggplotly(p)
+
+str(p)
+
 
 ```
 
