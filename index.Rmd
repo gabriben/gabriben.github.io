@@ -3,14 +3,14 @@
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
-<img src="images/workinTight.png" style="width:25%; margin-right: 20px" align="left">
+<img src="images/favTerrasse.png" style="width:25%; margin-right: 20px" align="left">
+
+As a PhD student for  <a href="https://www.uva.nl/"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/78/University_of_Amsterdam_logo.svg/1920px-University_of_Amsterdam_logo.svg.png" style="display: inline-block; margin: 0; height:30px" /> </a> <a href="https://www.rtl.nl/"><img src="https://upload.wikimedia.org/wikipedia/commons/3/34/RTL_Nederland.svg" style="display: inline-block; margin: 0; height:30px" /> </a>,  I am doing a mix of theoretical and applied AI research. The main themes are metrics-as-losses for neural networks <a href="https://openreview.net/forum?id=gvSHaaD2wQ&noteId=TxrcBHxxSs"><img src="images/doc_neon.png" style="display: inline-block; margin: 0; height:30px" /> </a>, normative diversity metrics for news recommendation <a href="https://recsys.acm.org/recsys22/accepted-contributions/#:~:text=RADio%20%E2%80%93%20Rank%2DAware%20Divergence%20Metrics%20to%20Measure%20Normative%20Diversity%20in%20News%20Recommendations"><img src="images/doc_neon.png" style="display: inline-block; margin: 0; height:30px" /> </a>, intent-satisfaction modelling <a href="https://openreview.net/forum?id=gvSHaaD2wQ&noteId=TxrcBHxxSs"><img src="images/doc_neon.png" style="display: inline-block; margin: 0; height:30px" /> </a> and video-to-music AI [ProsAIc](./ProsAIc.html).
 
 
-As part of my Master in Statistics, I am currently doing an exchange at Columbia University, my home university being KU Leuven. In parallel, I am writing my thesis on the digitization and reconstruction of Kaplan Meier survival curves, involving a Hough transform and the sequential re-estimation of numbers at risk given the detected deaths and censoring events. 
 
-This summer I worked at Cytel, where I was trying to derive a mathematical formulation for the conditional probability  involved in adaptive clinical trials with compounded outcomes based on the [Finkelstein-Schoenfled Statistic](https://cdn1.sph.harvard.edu/wp-content/uploads/sites/253/2016/05/joint-rank-sim-1999.pdf).
 
-My CV is available [here](files/Gabriel Benedict.pdf).
+<!-- My CV is available [here](files/Gabriel Benedict.pdf). -->
 
 <!-- # Writing -->
 

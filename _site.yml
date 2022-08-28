@@ -7,6 +7,8 @@ navbar:
       href: research.html
     - text: "Programming"
       href: software.html
+    - text: "Teaching"
+      href: teaching.html      
   right:
     - icon: fa-envelope fa-lg
       href: contact.html
@@ -14,6 +16,11 @@ navbar:
       href: https://github.com/gabriben
     - icon: fa-linkedin fa-lg
       href: https://www.linkedin.com/in/gabriben/
+    - icon: fa-solid fa-film
+      href: https://letterboxd.com/gabriben/      
+    - icon: fa-brands fa-google
+    - href: https://scholar.google.com/citations?user=28Ouga0AAAAJ
+      
 output:
   html_document:
     theme: paper

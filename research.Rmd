@@ -3,6 +3,17 @@
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
+<!-- ## master thesis -->
+
+<!-- I am writing my thesis on the digitization and reconstruction of Kaplan Meier survival curves, involving a Hough transform and the sequential re-estimation of numbers at risk given the detected deaths and censoring events.  -->
+
+# While in Amsterdam
+
+See [main page](./index.html) of this website and [Google Scholar](https://scholar.google.com/citations?user=28Ouga0AAAAJ&hl=en&oi=sra).
+
+---
+
+# Before Amsterdam
 
 ## Robust Association Measures
 
