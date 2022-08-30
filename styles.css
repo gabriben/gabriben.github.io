@@ -37,7 +37,7 @@ h2,h3,h4,h5,h6{
   font-size: 20pt;
 }
 
-
+/*
 img {
     display: block;
     margin: auto;
@@ -46,9 +46,11 @@ img {
 img-circle {
     border-radius: 50%;
 }
+*/
 
 video {
     /* override other styles to make responsive */
     width: 100% !important;
     height: auto !important;
 }
+
