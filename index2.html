@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Bénédict - Personal Website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            min-height: 100vh;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid #007bff;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 1.5em;
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #0056b3;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .about-text {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .publications {
+            margin-top: 30px;
+        }
+
+        .publication-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+        }
+
+        .publication-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .publication-authors {
+            color: #6c757d;
+            margin-bottom: 8px;
+        }
+
+        .publication-venue {
+            color: #495057;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+
+        .publication-year {
+            color: #6c757d;
+            font-weight: bold;
+        }
+
+        .publication-links {
+            margin-top: 10px;
+        }
+
+        .publication-links a {
+            display: inline-block;
+            margin-right: 15px;
+            color: #007bff;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+
+        .publication-links a:hover {
+            text-decoration: underline;
+        }
+
+        .google-scholar-link {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #4285f4;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .google-scholar-link:hover {
+            background-color: #3367d6;
+            color: white;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/self-circle.png" alt="Gabriel Bénédict" class="profile-img">
+            <h1>Gabriel Bénédict</h1>
+            <p class="subtitle">Statistician, Edge AI research</p>
+            <p class="subtitle">Amazon</p>
+            
+            <div class="social-links">
+                <a href="mailto:gbndict@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/gabriben" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gabriben/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://scholar.google.com/citations?user=28Ouga0AAAAJ" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>About Me</h2>
+            <div class="about-text">
+                <p>I am a PhD student conducting research at the intersection of theoretical and applied AI, working with the University of Amsterdam and RTL Nederland. My research focuses on several key areas:</p>
+                
+                <ul style="margin-left: 20px; margin-top: 15px;">
+                    <li><strong>Metrics-as-losses for neural networks:</strong> Developing novel approaches to incorporate evaluation metrics directly into neural network training objectives</li>
+                    <li><strong>Normative diversity metrics for news recommendation:</strong> Creating frameworks to measure and improve diversity in news recommendation systems</li>
+                    <li><strong>Intent-satisfaction modeling:</strong> Building models that better understand and satisfy user intent in information retrieval</li>
+                    <li><strong>Video-to-music AI:</strong> Working on the ProsAIc project to develop AI systems that can generate music from video content</li>
+                </ul>
+                
+                <p>My work combines theoretical insights with practical applications, particularly in the context of media and information systems.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Selected Publications</h2>
+            <div class="publications">
+                <div class="publication-item">
+                    <div class="publication-title">Metrics-as-losses for Neural Networks</div>
+                    <div class="publication-authors">Gabriel Bénédict</div>
+                    <div class="publication-venue">OpenReview</div>
+                    <div class="publication-year">2023</div>
+                    <div class="publication-links">
+                        <a href="https://openreview.net/forum?id=gvSHaaD2wQ&noteId=TxrcBHxxSs" target="_blank">View Paper</a>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="publication-title">Normative Diversity Metrics for News Recommendation</div>
+                    <div class="publication-authors">Gabriel Bénédict</div>
+                    <div class="publication-venue">ACM Digital Library</div>
+                    <div class="publication-year">2022</div>
+                    <div class="publication-links">
+                        <a href="https://dl.acm.org/doi/abs/10.1145/3523227.3546780" target="_blank">View Paper</a>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="publication-title">Intent-Satisfaction Modelling</div>
+                    <div class="publication-authors">Gabriel Bénédict</div>
+                    <div class="publication-venue">OpenReview</div>
+                    <div class="publication-year">2023</div>
+                    <div class="publication-links">
+                        <a href="https://openreview.net/forum?id=gvSHaaD2wQ&noteId=TxrcBHxxSs" target="_blank">View Paper</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="https://scholar.google.com/citations?user=28Ouga0AAAAJ&hl=en" target="_blank" class="google-scholar-link">
+                <i class="fas fa-graduation-cap"></i> View Complete Publication List on Google Scholar
+            </a>
+        </div>
+
+        <div class="section">
+            <h2>Research Areas</h2>
+            <div class="about-text">
+                <ul style="margin-left: 20px;">
+                    <li><strong>Artificial Intelligence:</strong> Neural networks, machine learning, deep learning</li>
+                    <li><strong>Information Retrieval:</strong> Recommendation systems, search algorithms, user intent modeling</li>
+                    <li><strong>Media Technology:</strong> News recommendation, content diversity, video-to-music AI</li>
+                    <li><strong>Applied Statistics:</strong> Robust association measures, generalized linear models</li>
+                    <li><strong>Economics:</strong> Development economics, debt relief, counterfactual analysis</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
